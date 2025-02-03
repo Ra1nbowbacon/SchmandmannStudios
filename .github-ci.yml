@@ -1,0 +1,14 @@
+# The Docker image that will be used to build your app
+image: node:lts
+
+pages:
+  stage: deploy
+  script:
+  - mkdir -p public
+  - shopt -s extglob
+  - cp -r !(public) public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
