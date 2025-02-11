@@ -25,8 +25,9 @@ html, body {
 
 
 body {
-    font-family: "Amiko";
-    background-color: #cee4ff;
+    font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    background-color: #f2e9e4;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -45,7 +46,7 @@ body {
     display:flex;
     justify-content:space-evenly;
     width: 100%;
-    background-color: #2d3c4f;
+    background-color: #22223b;
   }
 
   .topnav a{
@@ -53,7 +54,7 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 16px;
-    color: #b1d2fb;
+    color: #f2e9e4;
   }
 
   .icon {
@@ -74,7 +75,7 @@ body {
     height: 29px;
   }
 
-  /*Gallery*/
+    /*Gallery*/
 
   #gallery {
     display: flex;
@@ -96,8 +97,8 @@ body {
 
     #gallery article p {
       position: absolute;
-      color: #19212b;
-      background-color: #b1d2fba2;
+      color: #22223b;
+      background-color: #c9ada7bf;
       margin: 0;
       bottom: 10%;
       left: 5%;
@@ -128,15 +129,37 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 10px;
+    padding: 10px;    
   }
 
-  #content h1 {
-    font-family: "Anton";
-    color: #2d3c4f;
+   h1 {
+    /*font-family: "Anton";*/
+    margin: 0px 0px 40px;
+    color: #22223b;
     width: 100%;
-    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 0;
+  }
+
+  #content #text p{
+    text-align: left;
+    hyphens: auto;
+    padding: 0;
+    line-height: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: #22223b;
+
+  }
+
+  #content #text hr{
+    border: none;
+    border-top: 2px solid #22223b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
   }
 
     #content #text img {
@@ -181,18 +204,20 @@ body {
       align-items: center;
       justify-content:space-between;
       position: relative;
+      margin-top: 10px;
+      margin-bottom: 15px;
     }
 
       #content #navigation a{
-        width: 30px;
-        height:30px;
+        width: 25px;
+        height:25px;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
       #content #navigation a:hover {
-        background-color: #2d3c4f3e;
+        background-color: #9a8c98;
         border-radius: 20px;
       }
 
@@ -202,30 +227,11 @@ body {
           height: auto;
         }
 
-    #content #text p{
-      text-align: left;
-      hyphens: auto;
-      padding: 10px;
-      padding-top: 0;
-    }
-
-    #content #text hr{
-      border: none;
-      border-top: 2px solid #2d3c4f;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 95%;
-    }
-
-    
-
 
   /*Header*/
 
   #header {
-    text-align: center;
-    padding: 20px;
-    color: #2d3c4f;
+    color: #22223b;
   }
 
   #logo {
@@ -233,15 +239,15 @@ body {
   }
 
   #footer {
-    background-color: #2d3c4f;
-    color: #b1d2fb;
+    background-color: #9a8c98;
+    color: #22223b;
     text-align: center;
     padding: 20px;
   }
 
   #lizenz a{
       text-decoration: none;
-      color: #b1d2fb;
+      color: #22223b;
   }
 
   #lizenz {
@@ -311,13 +317,6 @@ body {
       height: 100%;
       object-fit: cover;
       padding-bottom: 10px;
-    }
-
-    #gallery article:hover .photo img {
-      width: 100%;
-      height: auto;
-      transition: width 0.3s linear;
-      
     }
 
     #gallery article p {
